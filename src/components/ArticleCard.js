@@ -1,17 +1,17 @@
 import React from "react";
-
-function ArticleCard({ date, description, imageAlt, imageSrc, link }) {
+//Add link
+function ArticleCard({ date, description, imageAlt, imageSrc }) {
   return (
-    <div class="article-card-wrapper">
-      <div class="thumbnail">
+    <div className="article-card-wrapper">
+      <div className="thumbnail">
         <img src={imageSrc} alt={imageAlt}></img>
       </div>
-      <div class="details">
+      <div className="details">
         <h2>Article Title</h2>
-        <p class="date">{date}</p>
-        <p class="description">{description}</p>
-        <p class="link">
-          <a href={link}>Read More</a>
+        <p className="date">{date}</p>
+        <p className="description">{description}</p>
+        <p className="link">
+          <a href="#">Read More</a>
         </p>
       </div>
     </div>
