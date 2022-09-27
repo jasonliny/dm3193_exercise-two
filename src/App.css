@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  font-family: sans-serif;
+}
+.page-wrapper {
+  /* margin: 50px; */
+  margin: 50px auto;
+  max-width: 1050px;
+}
+.page-wrapper h1 {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.article-card-wrapper {
+  border: 1px solid black;
+  display: flex;
+  margin-bottom: 50px;
+  min-height: 150px;
+  padding: 20px 25px 30px 30px;
+}
+
+.article-card-wrapper .thumbnail {
+  background-color: #c4c4c4;
+  flex-basis: 25%;
+  height: auto;
+  width: 100%;
+}
+
+.article-card-wrapper .details {
+  flex-basis: 80%;
+  margin: 0px 20px;
+}
+
+.article-card-wrapper h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.article-card-wrapper .details .date {
+  margin: 0 0 0 5px;
+}
+
+.article-card-wrapper .details a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Article */
+.article-wrapper .header {
+  background-color: #c4c4c4; /*change to background-img */
+  margin: 40px auto;
+}
