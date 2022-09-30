@@ -9,10 +9,12 @@ function List() {
       {Data.map((article, i) => (
         <ArticleCard
           key={i}
-          date={article.date}
+          date={article.publishedDate}
           description={article.blurb}
+          id={article.id}
           imageAlt={article.image.alt}
           imageSrc={article.image.url}
+          title={article.title}
         />
       ))}
     </main>

@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useMemo } from "react";
 //Add link
-function ArticleCard({ date, description, imageAlt, imageSrc }) {
+function ArticleCard({ date, description, id, imageAlt, imageSrc, title }) {
+  // const articleDate = useMemo(() => {
+  //   const parsedDate = new Date(date);
+  //   return parsedDate.toDateString();
+  // }, [date]);
   return (
     <div className="article-card-wrapper">
       <div className="thumbnail">
         <img src={imageSrc} alt={imageAlt}></img>
       </div>
       <div className="details">
-        <h2>Article Title</h2>
+        <h2>{title}</h2>
         <p className="date">{date}</p>
         <p className="description">{description}</p>
         <p className="link">
-          <a href="#">Read More</a>
+          <a href={`/article/${id}`}>Read More</a>
         </p>
       </div>
     </div>
