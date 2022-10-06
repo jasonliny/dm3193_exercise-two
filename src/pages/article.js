@@ -19,7 +19,7 @@ function Article() {
     <div className="article-wrapper">
       <header
         style={{
-          backgroundImage: `url('${articleData.image.url})`,
+          backgroundImage: `url('${articleData.image.url}')`,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
