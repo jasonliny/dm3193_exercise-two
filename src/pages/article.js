@@ -35,7 +35,7 @@ function Article() {
           backgroundSize: "cover",
         }}
       >
-        <div className="header--text">
+        <div className="header-text">
           <h1>{articleData.title}</h1>
           <p className="date">{date}</p>
           <p className="blurb">
