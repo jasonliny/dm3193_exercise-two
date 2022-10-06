@@ -2,19 +2,8 @@ import React, { useMemo } from "react";
 import { useParams } from "react-router";
 import Data from "../components/data";
 
-/*
-1. Header
-    Title
-    Date
-    Blurb
-    Background img
-2. Article Body
-    Everything
-
-*/
 function Article() {
   const { id } = useParams();
-  // console.log(id);
   const articleData = Data.find((article) => article.id === id);
 
   // updates whenever something in square brackets changes
@@ -63,7 +52,6 @@ function Article() {
             default:
               return <p key={i}>{text.data}</p>;
           }
-          return <p>{text.data}</p>;
         })}
       </div>
     </div>
